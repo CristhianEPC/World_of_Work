@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">World of Work</string>
+    <string name="app_name" translatable="false">World of Work</string>
+    <string name="iniciar">Sign In</string>
+    <string name="registrar">Sign Up</string>
+    <string name="usuario">Username</string>
+    <string name="contra">Password</string>
 </resources>
