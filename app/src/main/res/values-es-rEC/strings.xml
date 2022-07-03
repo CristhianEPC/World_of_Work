@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="iniciar">Ingresar</string>
+    <string name="registrar">Registrase</string>
+    <string name="usuario">Usuario</string>
+    <string name="contra">Contraseña</string>
+</resources>
