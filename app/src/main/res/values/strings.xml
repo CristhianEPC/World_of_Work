@@ -4,4 +4,11 @@
     <string name="registrar">Sign Up</string>
     <string name="usuario">Username</string>
     <string name="contra">Password</string>
+    <string name="nombre">Name</string>
+    <string name="apellido">Last Name</string>
+    <string name="email">E-mail</string>
+    <string name="Repetir_contra">Repeat Password</string>
+    <string name="crear">Create</string>
+    <string name="cancelar">Cancel</string>
+    <string name="añadir">Add Photo</string>
 </resources>
