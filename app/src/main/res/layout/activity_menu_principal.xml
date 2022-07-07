@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuPrincipal">
+
+    <Button
+        android:id="@+id/BtnMensajesM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Mensaje"
+        app:layout_constraintBottom_toBottomOf="@+id/BtnPerfilUserM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BtnPerfilUserM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:text="Perfil"
+        app:layout_constraintEnd_toStartOf="@+id/BtnMensajesM"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="122dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="24dp"
+        android:text="Menu Principal"
+        android:textAlignment="gravity"
+        android:textColor="#E40E0E"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toStartOf="@+id/BtnPerfilUserM"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="386dp"
+        android:layout_height="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space3" />
+
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="373dp"
+        android:layout_height="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnPerfilUserM" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Recientes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="385dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton10"
+                android:layout_width="70"
+                android:layout_height="60"
+                android:background="#8C2C2C"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,ImageContrastCheck,ImageContrastCheck,ImageContrastCheck,ImageContrastCheck"
+                tools:srcCompat="@drawable/pro_foto" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Juan M." />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Space
+        android:id="@+id/space4"
+        android:layout_width="348dp"
+        android:layout_height="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+    <ScrollView
+        android:layout_width="390dp"
+        android:layout_height="436dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/BtnAbogadosMP"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:text="A B O G A D O S " />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <Button
+                android:id="@+id/BtnDoctorMP"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:text="M E D I C I N A" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="14dp" />
+
+            <Button
+                android:id="@+id/BtnMaestrosMP"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:text="D O C E N T E S" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="22dp" />
+
+            <Button
+                android:id="@+id/BtnCarpinterosMP"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="C A R P I N T E R O S " />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="24dp" />
+
+            <Button
+                android:id="@+id/BtnElectricidadMP"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:text="E L E C T R I C I D A D" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <Button
+                android:id="@+id/BtnArquitectoMP"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:text="A R Q U I T E C T U R A" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="11dp" />
+
+            <Button
+                android:id="@+id/BtnTecnologiaMP"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="T E C N O L O G I A" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <Button
+                android:id="@+id/BtnOtrosMP"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="O T R O S ..." />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="A C T I V I D A D "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
